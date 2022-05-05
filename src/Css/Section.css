@@ -1,0 +1,72 @@
+video{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: -1;
+}
+
+.container {
+  height: 95vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  object-fit: contain;
+}
+
+.container h1{
+  color: #fff;
+  font-size: 6rem;
+}
+
+.container p{
+  margin-top: .5rem;
+  color: #fff;
+  font-size: 2.5rem;
+}
+
+.container-btns{
+  margin-top: 1.5rem ;
+}
+
+.container-btns a{
+  margin: .3rem;
+}
+
+.fa-circle-play{
+  margin-left: .2rem;
+}
+
+@media (max-width:987px){
+  .container h1{
+    font-size: 4rem;
+    margin-top: -6rem;
+  }
+  .container p{
+    margin-top: .5rem;
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px){
+  .container h1{
+    font-size: 3rem;
+    margin-top: -10rem ;
+  }
+  .container p{
+    font-size: 1.5rem;
+  }
+
+  .btn-mobile{
+    display: block;
+    text-decoration: none;
+  }
+  .container-btns{
+    margin-top: .5rem ;
+  }
+  .container-btns button{
+    width: 100%;
+  } 
+}
